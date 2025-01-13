@@ -1,0 +1,155 @@
+/* Popup Overlay */
+.popup-overlay {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: rgba(0, 0, 0, 0.5);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    z-index: 1000;
+  }
+  
+  /* Popup Content */
+  .popup-content {
+    background: #fff;
+    padding: 20px;
+    border-radius: 8px;
+    width: 400px;
+    box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
+  }
+  
+  /* Popup Header */
+  .popup-content h2 {
+    margin-bottom: 20px;
+    color: #333;
+    text-align: center;
+  }
+  
+  /* Price Input */
+  .popup-content .price-input {
+    width: 100%;
+    padding: 10px 12px;
+    border-radius: 5px;
+    border: 1px solid #ddd;
+    font-size: 16px;
+    color: #333;
+    background-color: #fafafa;
+    transition: all 0.3s ease;
+  }
+  
+  /* Focused Input */
+  .popup-content .price-input:focus {
+    border-color: #4caf50;
+    outline: none;
+    background-color: #fff;
+  }
+  
+  /* Placeholder Styling */
+  .popup-content .price-input::placeholder {
+    color: #888;
+  }
+  
+  /* Invalid Input */
+  .popup-content .price-input:invalid {
+    border-color: #f44336;
+  }
+  
+  .popup-content .price-input:invalid:focus {
+    background-color: #fff0f0;
+    border-color: #f44336;
+  }
+  
+  /* Input Label */
+  .popup-content label {
+    font-size: 14px;
+    font-weight: 500;
+    color: #555;
+    margin-bottom: 8px;
+    display: inline-block;
+  }
+  
+  /* Address Container */
+  .address-container {
+    display: flex;
+    align-items: center;
+    gap: 8px;
+    margin: 10px 0;
+  }
+  
+  /* Address Text */
+  .address-text {
+    font-family: monospace;
+    background: #f5f5f5;
+    padding: 2px 6px;
+    border-radius: 4px;
+    color: #333;
+  }
+  
+  /* Copy Button */
+  .copy-button {
+    background: none;
+    border: none;
+    padding: 4px;
+    cursor: pointer;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: #666;
+    border-radius: 4px;
+    transition: all 0.2s;
+  }
+  
+  /* Hover Effect for Copy Button */
+  .copy-button:hover {
+    background: #f0f0f0;
+    color: #333;
+  }
+  
+  /* Active Effect for Copy Button */
+  .copy-button:active {
+    transform: scale(0.95);
+  }
+  
+  /* Buttons Container */
+  .popup-buttons {
+    margin-top: 20px;
+    display: flex;
+    justify-content: flex-end;
+    gap: 30px;
+  }
+  
+  /* Confirm Button */
+  .confirm-button {
+    padding: 10px 20px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    font-size: 16px;
+    background-color: #4caf50;
+    color: white;
+  }
+  
+  /* Hover Effect for Confirm Button */
+  .confirm-button:hover {
+    background-color: #45a049;
+  }
+  
+  /* Cancel Button */
+  .cancel-button {
+    padding: 10px 20px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    font-size: 16px;
+    background-color: #f44336;
+    color: white;
+  }
+  
+  /* Hover Effect for Cancel Button */
+  .cancel-button:hover {
+    background-color: #e53935;
+  }
+  

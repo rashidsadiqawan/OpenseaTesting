@@ -1,0 +1,42 @@
+.container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  gap: 20px;
+  height: 100vh;
+  background: linear-gradient(135deg, #f0f4f8, #d9e2ec);
+  font-family: 'Arial', sans-serif;
+}
+
+.button {
+  padding: 12px 24px;
+  font-size: 16px;
+  font-weight: 600;
+  border: none;
+  border-radius: 8px;
+  cursor: pointer;
+  transition: transform 0.2s ease, background-color 0.3s ease;
+}
+
+.button:hover {
+  transform: scale(1.05);
+}
+
+.loginButton {
+  background-color: #007bff;
+  color: white;
+}
+
+.loginButton:hover {
+  background-color: #0056b3;
+}
+
+.logoutButton {
+  background-color: #dc3545;
+  color: white;
+}
+
+.logoutButton:hover {
+  background-color: #b52a36;
+}
